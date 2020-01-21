@@ -36,13 +36,13 @@ if (message.content === 'sharese') {
 if (message.content === 'zach') {
     message.reply('when she has a forehead')
 }
-if (message.content === 'micah' ) {
+if (message.content.includes('micah') ) {
      message.channel.send({embed: {
         description: "Just took a bath",
         image: {
         url: "https://cdn.discordapp.com/attachments/664165090236563499/667799246270890044/image0.jpeg"
         }
-        }}).catch(console.error)
+    }}).catch(console.error)
 }
 if (message.content === 'henbot' ) {
     message.reply('i love henbot!')
