@@ -15,8 +15,8 @@ if (message.content === 'omorobot') {
 if (message.content === 'wilf') {
     message.reply('pervert supreme')
 }
-if (message.content ==='momo' ) {
-    message.reply('=＾•ᆺ•＾= ')
+if (message.content.includes =='momo' ) {
+    message.reply('=＾•ᆺ•＾=')
 }
 if (message.content === 'dorian') {
     message.reply('( ɔ˘ ³ ˘ɔ )(=＾◕ᆺ◕＾=)')
@@ -39,8 +39,8 @@ if (message.content === 'zach') {
 if (message.content === 'micah' ) {
     message.reply('ugly r-word')
 }
-if (message.content ==='henbot' ) {
-    message.reply('i love my brother')
+if (message.content.includes =='henbot' ) {
+    message.reply('i love henbot!')
 }
 if (message.content === 'omohelp') {
     message.reply('i am as clueless as you are!')
