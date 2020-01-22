@@ -70,7 +70,8 @@ if (message.content.includes('micah') ) {
     }}).catch(console.error)
 }
 if (message.content.includes('henbot') ) {
-    message.reply('i love henbot!')
+    message.reply('are you talking about my brother? (◕ヮ◕)*:･ﾟ✧')
+
 }
 if (message.content === 'omohelp') {
     message.reply('i am as clueless as you are!')
