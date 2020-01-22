@@ -12,7 +12,7 @@ client.on('message', message => {
 if (message.content.includes('omorobot')) {
     message.reply('i am omorobot ᕙ(`▿´)ᕗ')
 }
-if (message.content === 'wilf') {
+if (message.content.includes('wilf')) {
     message.channel.send({embed: {
         description: "pervert",
         image: {
@@ -31,7 +31,7 @@ if (message.content.includes ('dorian') ) {
         }
     }}).catch(console.error)
 }
-if (message.content === 'soapy') {
+if (message.content.includes('soapy')) {
     message.channel.send({embed: {
         description: "weeb",
         image: {
@@ -39,7 +39,7 @@ if (message.content === 'soapy') {
         }
     }}).catch(console.error)
 }
-if (message.content === 'henri') {
+if (message.content.includes('henri')) {
     message.channel.send({embed: {
         description: "henwi",
         image: {
