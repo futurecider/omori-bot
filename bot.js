@@ -10,7 +10,7 @@ client.on('message', message => {
     message.reply('pong!');
 }
 if (message.content.includes('omorobot')) {
-    message.reply('i am omorobot ᕙ(`▿´)ᕗ')
+    message.reply('at your service! ᕙ(`▿´)ᕗ')
 }
 if (message.content.includes('wilf')) {
     message.channel.send({embed: {
@@ -20,7 +20,7 @@ if (message.content.includes('wilf')) {
         }
     }}).catch(console.error)
 }
-if (message.content === 'momo' ) {
+if (message.content.includes('momo') ) {
     message.reply('=＾•ᆺ•＾=')
 }
 if (message.content.includes ('dorian') ) {   
@@ -47,11 +47,21 @@ if (message.content.includes('henri')) {
         }
     }}).catch(console.error)
 }
-if (message.content === 'bambi') {
-    message.reply('digging her own grave!')
+if (message.content.includes('bambi')) {
+    message.channel.send({embed: {
+        description: "digging her own grave!",
+        image: {
+        url: "https://cdn.discordapp.com/attachments/669407698734809098/669959781741494292/sharese_whateverr.gif"
+        }
+    }}).catch(console.error)
 }
-if (message.content === 'sharese') {
-    message.reply('digging her own grave!')
+if (message.content.includes('sharese')) {
+    message.channel.send({embed: {
+        description: "digging her own grave!",
+        image: {
+        url: "https://cdn.discordapp.com/attachments/669407698734809098/669959781741494292/sharese_whateverr.gif"
+        }
+    }}).catch(console.error)
 }
 if (message.content.includes('zach')) {
     message.channel.send({embed: {
@@ -74,7 +84,7 @@ if (message.content.includes('henbot') ) {
 
 }
 if (message.content === 'omohelp') {
-    message.reply('i am as clueless as you are!')
+    message.reply('sorry, i am just as clueless as you are!(╥︣﹏᷅╥᷅)')
 }
 
 
