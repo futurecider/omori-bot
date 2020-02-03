@@ -3,10 +3,13 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
+    client.user.setPresence({ game: { name: '=＾•ᆺ•＾=' }, status: 'meow' })
+  .then(console.log)
+  .catch(console.error);
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
+    if (message.content.toLowerCase() === 'ping') {
     message.reply('pong!');
 }
 if (message.content.includes('omorobot')) {
