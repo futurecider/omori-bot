@@ -3,7 +3,6 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setPresence({ game: { name: 'ᕙ(`▿´)ᕗ' }, status: 'dnd' })
     client.user.setPresence({
         status: "dnd",  //You can show online, idle....
         game: {
