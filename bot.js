@@ -82,11 +82,11 @@ if (message.content.includes('micah') ) {
     }}).catch(console.error)
 }
 if (message.content.includes('henbot') ) {
-    message.reply('are you talking about my brother? (◕ヮ◕)*:･ﾟ✧')
+    message.reply('my brother? (◕ヮ◕)*:･ﾟ✧')
 
 }
 if (message.content === 'omohelp') {
-    message.reply('sorry, i am just as clueless as you are!(╥︣﹏᷅╥᷅)')
+    message.reply('i am just as clueless as you are!(╥︣﹏᷅╥᷅)')
 }
 
 
