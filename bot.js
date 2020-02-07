@@ -87,7 +87,7 @@ if (message.content.includes('henbot') ) {
 }
 if (message.content === 'omohelp') {
     message.reply('i am just as clueless as you are!(╥︣﹏᷅╥᷅)')
-}
+} // pet thing, possibly youtube thing, and omo commands for point system (omopoints)
 
 
 });
