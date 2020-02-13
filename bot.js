@@ -89,10 +89,8 @@ if (message.content === 'omohelp') {
     message.reply('i am just as clueless as you are!(╥︣﹏᷅╥᷅)')
 } // music bot time :[
 
-
-
  client.on('message', async message => {
-        var prefix = "*"
+        var prefix = "!"
         if (message.author.bot) return;
         if (!message.content.startsWith(prefix)) return;
     
@@ -111,6 +109,7 @@ if (message.content === 'omohelp') {
             message.channel.send('i dont understand!(╥︣﹏᷅╥᷅)')
         }
     });
+
     async function execute(message, serverQueue) {
         const args = message.content.split(' ');
     
