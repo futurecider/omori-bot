@@ -97,7 +97,7 @@ if (message.content === 'omohelp') {
 } // music bot time :[
     
  client.on('message', async message => {
-        var prefix = "!"
+
         if (message.author.bot) return;
         if (!message.content.startsWith(prefix)) return;
     
