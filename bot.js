@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const queue = new Map();
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -88,7 +89,7 @@ if (message.content.includes('henbot') ) {
 if (message.content === 'omohelp') {
     message.reply('i am just as clueless as you are!(╥︣﹏᷅╥᷅)')
 } // music bot time :[
-
+    
  client.on('message', async message => {
         var prefix = "!"
         if (message.author.bot) return;
