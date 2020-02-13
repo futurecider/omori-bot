@@ -92,7 +92,7 @@ if (message.content === 'omohelp') {
 
 
  client.on('message', async message => {
-        var prefix = "omo"
+        var prefix = "*"
         if (message.author.bot) return;
         if (!message.content.startsWith(prefix)) return;
     
