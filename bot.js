@@ -17,7 +17,7 @@ client.on('ready', () => {
  client.on('message', async message => {
 
         if (message.author.bot) return;
-        
+
         if (message.content.toLowerCase() === 'ping') {
             message.reply('pong!');
         }
@@ -196,23 +196,41 @@ client.on('ready', () => {
             });
         dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
     }
+
+
+
+function search() {
+	var searchTerm = $('#txtSearch').val()
+ 
+  gapi.client.init({
+    'apiKey': process.env.apiKey, 
+    'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest']
+  }).then(function() {
+    return gapi.client.youtube.search.list({
+      q: searchTerm,
+      part: 'snippet'
+    });
+  }).then(function(response) {
+  	var searchResult = response.result;
+    $('#search-results').append(JSON.stringify(searchResult, null , 4))
+  	console.log(searchResult.items[0])
+    var firstVideo = searchResult.items[0]
+    firstVideo.url = `https://youtube.com/watch?v=${firstVideo.id.videoId}`
+   
+});
+
+}
+
+
+$('#btnSearch').on('click', function() {
+  	$('#first-video-title').text("")
+    if (!apiKey) {
+      $('#first-video-title').text("You need to set an apiKey!")
+      return;
+    }
+  	gapi.load('client', search)
+  });
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
